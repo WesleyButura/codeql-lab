@@ -1,7 +1,7 @@
 from flask import Flask, request
 import sqlite3
 
-app = Flask(name)
+app = Flask(__name__)
 
 @app.route('/user')
 def buscar_usuario():
@@ -13,7 +13,8 @@ def buscar_usuario():
     cursor = conn.cursor()
 
     cursor.execute(
-        f"SELECT * FROM users WHERE id = {user_id}"
+        "SELECT * FROM users WHERE id = ?",
+        (user_id,)
     )
 
     return str(cursor.fetchone())
