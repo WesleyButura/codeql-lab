@@ -38,9 +38,9 @@ jobs:
       - name: Executar análise CodeQL
         uses: github/codeql-action/analyze@v3
 
-  # =========================================
+  
   # JOB 2 — TESTES AUTOMATIZADOS
-  # =========================================
+  
   tests:
     name: 🧪 Testes Automatizados
     runs-on: ubuntu-latest
