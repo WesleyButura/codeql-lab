@@ -131,3 +131,34 @@ GitHub: https://github.com/WesleyButura
 ---
 
 ⭐ Projeto criado para fins acadêmicos, pesquisa e aprendizado em segurança de aplicações utilizando CodeQL.
+
+
+## Evidências da Pipeline
+
+### Teste 1 – Execução da Pipeline
+
+A pipeline foi executada com sucesso, concluindo as etapas de análise de segurança, testes automatizados e deploy para o ambiente stage.
+
+![Execução da Pipeline](Imagens/Pipeline%20funcionando%20corretamente%20(finalização%20da%20confecção).png)
+
+Observação:  a Imagem abaixo apresenta a pipeline durante a confecção (e dando erro)
+
+![Execução da Pipeline Erro](Imagens/Erro%20pipeline%20(processo%20de%20confecção).png)
+
+
+### Teste 2 – Detecção de Vulnerabilidade
+
+Foi identificada uma vulnerabilidade de SQL Injection através da análise estática realizada pelo CodeQL.
+
+![Detecção de Vulnerabilidade no Alerta](Imagens/Primeira%20vez%20da%20detecção%20da%20vulnerabilidade%20(Alerta).png)
+![Detecção de Vulnerabilidade no Commit](Imagens/Primeira%20vez%20da%20detecção%20da%20vulnerabilidade%20(commit).png)
+
+### Teste 3 – Correção da Vulnerabilidade
+
+A vulnerabilidade foi corrigida utilizando consultas parametrizadas, e o CodeQL registrou a correção na branch principal.
+
+![Correção de Vulnerabilidade no Alerta](Imagens/Correção%20de%20Vulnerabilidade%20(Alerta).png)
+![Correção de Vulnerabilidade no Commit](Imagens/Correção%20de%20Vulnerabilidade%20(Commit).png)
+
+Observações Adicionais: No folder imagens, possui mais algumas imagens durante o processo de confecção e testes. 
+Qualquer dúvida contatar Wesley Butura da Silva
